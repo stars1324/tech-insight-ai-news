@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechInsight - Your source for in-depth analysis on artificial intelligence, developer tools, and emerging technology trends.">
+    <meta name="keywords" content="AI news, artificial intelligence, technology, developer tools, tech analysis">
+    <meta name="author" content="TechInsight">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="TechInsight - AI & Technology Analysis">
+    <meta property="og:description" content="Your source for in-depth analysis on artificial intelligence, developer tools, and emerging technology trends.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="index.html">
+    <meta property="og:site_name" content="TechInsight">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TechInsight - AI & Technology Analysis">
+    <meta name="twitter:description" content="Your source for in-depth analysis on artificial intelligence, developer tools, and emerging technology trends.">
+    <link rel="canonical" href="index.html">
+    <link rel="sitemap" type="application/xml" href="sitemap.xml">
+    <title>TechInsight - AI & Technology Analysis</title>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "TechInsight",
+        "description": "Your source for in-depth analysis on artificial intelligence, developer tools, and emerging technology trends.",
+        "url": "index.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "TechInsight"
+        }
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; color: #1a1a1a; background: #fff; }
+
+        /* Header */
+        header { background: #0f172a; padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+        .header-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5em; font-weight: 700; color: #fff; text-decoration: none; }
+        .logo span { color: #3b82f6; }
+        nav ul { display: flex; list-style: none; gap: 32px; }
+        nav a { color: #94a3b8; text-decoration: none; font-size: 0.95em; transition: color 0.2s; }
+        nav a:hover { color: #fff; }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff; padding: 80px 24px; text-align: center; }
+        .hero h1 { font-size: 3em; margin-bottom: 16px; letter-spacing: -0.02em; }
+        .hero p { font-size: 1.3em; color: #94a3b8; max-width: 600px; margin: 0 auto; line-height: 1.6; }
+
+        /* Main Content */
+        main { max-width: 1200px; margin: 0 auto; padding: 64px 24px; }
+
+        /* About Section */
+        .about { margin-bottom: 64px; }
+        .about h2 { font-size: 2em; margin-bottom: 24px; color: #111827; }
+        .about p { font-size: 1.1em; line-height: 1.8; color: #374151; margin-bottom: 16px; max-width: 800px; }
+
+        /* Topics Grid */
+        .topics { margin-bottom: 64px; }
+        .topics h2 { font-size: 2em; margin-bottom: 32px; color: #111827; }
+        .topics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+        .topic-card { background: #f8fafc; border-radius: 12px; padding: 32px; border: 1px solid #e2e8f0; transition: transform 0.2s, box-shadow 0.2s; }
+        .topic-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+        .topic-card h3 { font-size: 1.3em; margin-bottom: 12px; color: #111827; }
+        .topic-card p { color: #64748b; line-height: 1.6; }
+        .topic-icon { font-size: 2.5em; margin-bottom: 16px; }
+
+        /* Articles Section */
+        .articles { margin-bottom: 64px; }
+        .articles h2 { font-size: 2em; margin-bottom: 32px; color: #111827; }
+        .article-list { display: flex; flex-direction: column; gap: 24px; }
+        .article-item { display: flex; gap: 24px; padding: 24px; background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; transition: box-shadow 0.2s; }
+        .article-item:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .article-item .category { display: inline-block; background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 4px; font-size: 0.8em; font-weight: 500; margin-bottom: 8px; }
+        .article-item .category.infrastructure { background: #fef3c7; color: #92400e; }
+        .article-item h3 { font-size: 1.25em; margin-bottom: 8px; color: #111827; }
+        .article-item h3 a { color: inherit; text-decoration: none; }
+        .article-item h3 a:hover { color: #3b82f6; }
+        .article-item p { color: #64748b; line-height: 1.6; font-size: 0.95em; }
+        .article-item .meta { font-size: 0.85em; color: #94a3b8; margin-top: 12px; }
+
+        /* Footer */
+        footer { background: #0f172a; color: #94a3b8; padding: 48px 0 24px; margin-top: 64px; }
+        .footer-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+        .footer-brand p { margin-top: 12px; font-size: 0.9em; line-height: 1.6; }
+        .footer-links h4 { color: #fff; margin-bottom: 16px; font-size: 0.95em; }
+        .footer-links a { display: block; color: #94a3b8; text-decoration: none; font-size: 0.9em; margin-bottom: 8px; }
+        .footer-links a:hover { color: #fff; }
+        .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid #1e293b; font-size: 0.85em; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2em; }
+            .hero p { font-size: 1.1em; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+            nav ul { gap: 16px; }
+            .article-item { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Tech<span>Insight</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#footer">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Tech<span style="color: #3b82f6;">Insight</span></h1>
+        <p>Cutting through the noise to deliver thoughtful analysis on artificial intelligence, developer tools, and the technology shaping our future.</p>
+    </section>
+
+    <main>
+        <section class="about">
+            <h2>What We Do</h2>
+            <p>TechInsight is an independent technology publication focused on providing in-depth analysis of the most important trends in artificial intelligence and software development. We don't chase clicks with sensational headlines—we dig deeper to understand what these changes actually mean.</p>
+            <p>Our coverage spans AI infrastructure, developer tools, industry funding, regulatory developments, and the real-world impact of emerging technologies. Whether you're a developer, investor, or simply curious about where technology is heading, we aim to give you the context you need.</p>
+        </section>
+
+        <section class="topics" id="topics">
+            <h2>Topics We Cover</h2>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <div class="topic-icon">🤖</div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>From large language models to autonomous agents, we track the technologies reshaping how software gets built and used.</p>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">⚡</div>
+                    <h3>Infrastructure</h3>
+                    <p>The hidden systems powering AI—data centers, chips, power grids, and the supply chains that make it all possible.</p>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">🛠️</div>
+                    <h3>Developer Tools</h3>
+                    <p>How AI is changing the way software gets written, from coding assistants to fully autonomous development agents.</p>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">📊</div>
+                    <h3>Industry Analysis</h3>
+                    <p>Funding trends, regulatory battles, and the business strategies driving the AI industry forward.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles" id="articles">
+            <h2>Latest Articles</h2>
+            <div class="article-list">
+                <div class="article-item">
+                    <div>
+                        <span class="category infrastructure">Infrastructure</span>
+                        <h3><a href="/news/en/the-hidden-crisis-behind-ai-meteoric-rise.html">The Hidden Crisis Behind AI's Meteoric Rise</a></h3>
+                        <p>AI data centers are consuming unprecedented amounts of electricity, straining power grids and forcing utilities to rethink infrastructure planning.</p>
+                        <div class="meta">Rebecca Santos · January 28, 2026 · 9 min read</div>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div>
+                        <span class="category">Developer Tools</span>
+                        <h3><a href="/news/en/why-developers-are-ditching-200-subscriptions-for-free-ai-tools.html">Why Developers Are Ditching $200 Subscriptions for Free AI Tools</a></h3>
+                        <p>As premium AI coding tools charge up to $200 daily, open-source alternatives are gaining momentum among cost-conscious developers.</p>
+                        <div class="meta">James Mitchell · January 28, 2026 · 8 min read</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Tech<span>Insight</span></a>
+                    <p>Delivering thoughtful analysis on technology trends, developer tools, and the future of software.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Topics</h4>
+                    <a href="#topics">Artificial Intelligence</a>
+                    <a href="#topics">Development</a>
+                    <a href="#topics">Infrastructure</a>
+                    <a href="#topics">Security</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#footer">About Us</a>
+                    <a href="#footer">Contact</a>
+                    <a href="#footer">Advertise</a>
+                    <a href="#footer">Careers</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#footer">Privacy Policy</a>
+                    <a href="#footer">Terms of Service</a>
+                    <a href="#footer">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechInsight. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
