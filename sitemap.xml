@@ -6,7 +6,7 @@
 
     <!-- Homepage -->
     <url>
-        <loc>https://www.yoursite.com/news/index.html</loc>
+        <loc>https://tech-insight.jacbex.com/index.html</loc>
         <lastmod>2026-01-28</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -14,35 +14,35 @@
 
     <!-- Articles -->
     <url>
-        <loc>https://www.yoursite.com/en/the-hidden-crisis-behind-ai-meteoric-rise.html</loc>
+        <loc>https://tech-insight.jacbex.com/en/the-hidden-crisis-behind-ai-meteoric-rise.html</loc>
         <lastmod>2026-01-28</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.yoursite.com/en/why-developers-are-ditching-200-subscriptions-for-free-ai-tools.html</loc>
+        <loc>https://tech-insight.jacbex.com/en/why-developers-are-ditching-200-subscriptions-for-free-ai-tools.html</loc>
         <lastmod>2026-01-28</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.yoursite.com/en/ai-chips-arms-race-intensifies.html</loc>
+        <loc>https://tech-insight.jacbex.com/en/ai-chips-arms-race-intensifies.html</loc>
         <lastmod>2026-01-28</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.yoursite.com/en/ai-copyright-battles-heat-up.html</loc>
+        <loc>https://tech-insight.jacbex.com/en/ai-copyright-battles-heat-up.html</loc>
         <lastmod>2026-01-28</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.yoursite.com/en/google-search-ai-mode-changes-everything.html</loc>
+        <loc>https://tech-insight.jacbex.com/en/google-search-ai-mode-changes-everything.html</loc>
         <lastmod>2026-01-28</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
