@@ -1,0 +1,16 @@
+# robots.txt for tech-insight.jacbex.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://tech-insight.jacbex.com/sitemap.xml
+Sitemap: https://tech-insight.jacbex.com/sitemap_zh.xml
+Sitemap: https://tech-insight.jacbex.com/sitemap_ja.xml
+
+# Crawl-delay (optional, adjust as needed)
+# Crawl-delay: 1
+
+# Disallow specific paths if needed
+# Disallow: /private/
+# Disallow: /temp/

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechInsight - 您的人工智能、开发工具和新兴技术趋势深入分析来源。">
+    <meta name="keywords" content="AI新闻, 人工智能, 技术, 开发工具, 技术分析">
+    <meta name="author" content="TechInsight">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="TechInsight - AI与技术分析">
+    <meta property="og:description" content="您的人工智能、开发工具和新兴技术趋势深入分析来源。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/news/zh/">
+    <meta property="og:site_name" content="TechInsight">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TechInsight - AI与技术分析">
+    <meta name="twitter:description" content="您的人工智能、开发工具和新兴技术趋势深入分析来源。">
+    <link rel="canonical" href="/news/zh/">
+    <title>TechInsight - AI与技术分析</title>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "TechInsight",
+        "description": "您的人工智能、开发工具和新兴技术趋势深入分析来源。",
+        "url": "/news/zh/",
+        "publisher": {
+            "@type": "Organization",
+            "name": "TechInsight"
+        }
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; color: #1a1a1a; background: #fff; }
+
+        /* Header */
+        header { background: #0f172a; padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+        .header-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5em; font-weight: 700; color: #fff; text-decoration: none; }
+        .logo span { color: #3b82f6; }
+        nav ul { display: flex; list-style: none; gap: 32px; }
+        nav a { color: #94a3b8; text-decoration: none; font-size: 0.95em; transition: color 0.2s; }
+        nav a:hover { color: #fff; }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff; padding: 80px 24px; text-align: center; }
+        .hero h1 { font-size: 3em; margin-bottom: 16px; letter-spacing: -0.02em; }
+        .hero p { font-size: 1.3em; color: #94a3b8; max-width: 600px; margin: 0 auto; line-height: 1.6; }
+
+        /* Main Content */
+        main { max-width: 1200px; margin: 0 auto; padding: 64px 24px; }
+
+        /* About Section */
+        .about { margin-bottom: 64px; }
+        .about h2 { font-size: 2em; margin-bottom: 24px; color: #111827; }
+        .about p { font-size: 1.1em; line-height: 1.8; color: #374151; margin-bottom: 16px; max-width: 800px; }
+
+        /* Topics Grid */
+        .topics { margin-bottom: 64px; }
+        .topics h2 { font-size: 2em; margin-bottom: 32px; color: #111827; }
+        .topics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+        .topic-card { background: #f8fafc; border-radius: 12px; padding: 32px; border: 1px solid #e2e8f0; transition: transform 0.2s, box-shadow 0.2s; }
+        .topic-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+        .topic-card h3 { font-size: 1.3em; margin-bottom: 12px; color: #111827; }
+        .topic-card p { color: #64748b; line-height: 1.6; }
+        .topic-icon { font-size: 2.5em; margin-bottom: 16px; }
+
+        /* Articles Section */
+        .articles { margin-bottom: 64px; }
+        .articles h2 { font-size: 2em; margin-bottom: 32px; color: #111827; }
+        .article-list { display: flex; flex-direction: column; gap: 24px; }
+        .article-item { display: flex; gap: 24px; padding: 24px; background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; transition: box-shadow 0.2s; }
+        .article-item:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .article-item .category { display: inline-block; background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 4px; font-size: 0.8em; font-weight: 500; margin-bottom: 8px; }
+        .article-item .category.infrastructure { background: #fef3c7; color: #92400e; }
+        .article-item h3 { font-size: 1.25em; margin-bottom: 8px; color: #111827; }
+        .article-item h3 a { color: inherit; text-decoration: none; }
+        .article-item h3 a:hover { color: #3b82f6; }
+        .article-item p { color: #64748b; line-height: 1.6; font-size: 0.95em; }
+        .article-item .meta { font-size: 0.85em; color: #94a3b8; margin-top: 12px; }
+
+        /* Footer */
+        footer { background: #0f172a; color: #94a3b8; padding: 48px 0 24px; margin-top: 64px; }
+        .footer-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+        .footer-brand p { margin-top: 12px; font-size: 0.9em; line-height: 1.6; }
+        .footer-links h4 { color: #fff; margin-bottom: 16px; font-size: 0.95em; }
+        .footer-links a { display: block; color: #94a3b8; text-decoration: none; font-size: 0.9em; margin-bottom: 8px; }
+        .footer-links a:hover { color: #fff; }
+        .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid #1e293b; font-size: 0.85em; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2em; }
+            .hero p { font-size: 1.1em; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+            nav ul { gap: 16px; }
+            .article-item { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/news/zh/" class="logo">Tech<span>Insight</span></a>
+            <nav>
+                <ul>
+                    <li><a href="/news/zh/">首页</a></li>
+                    <li><a href="#topics">主题</a></li>
+                    <li><a href="#articles">文章</a></li>
+                    <li><a href="#footer">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Tech<span style="color: #3b82f6;">Insight</span></h1>
+        <p>穿越噪音,提供对人工智能、开发工具和塑造我们未来的技术的深思熟虑的分析。</p>
+    </section>
+
+    <main>
+        <section class="about">
+            <h2>我们做什么</h2>
+            <p>TechInsight是一个独立的技术出版物,专注于提供人工智能和软件开发最重要趋势的深入分析。我们不追逐耸人听闻的标题——我们深入挖掘以理解这些变化的实际意义。</p>
+            <p>我们的报道涵盖AI基础设施、开发工具、行业融资、监管发展和新兴技术的现实影响。无论您是开发者、投资者,还是仅仅对技术发展方向感到好奇,我们都旨在为您提供所需的背景。</p>
+        </section>
+
+        <section class="topics" id="topics">
+            <h2>我们涵盖的主题</h2>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <div class="topic-icon">🤖</div>
+                    <h3>人工智能</h3>
+                    <p>从大型语言模型到自主代理,我们跟踪重塑软件构建和使用方式的技术。</p>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">⚡</div>
+                    <h3>基础设施</h3>
+                    <p>驱动AI的隐藏系统——数据中心、芯片、电网以及使一切成为可能的供应链。</p>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">🛠️</div>
+                    <h3>开发工具</h3>
+                    <p>AI如何改变软件编写方式,从编码助手到完全自主的开发代理。</p>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">📊</div>
+                    <h3>行业分析</h3>
+                    <p>推动AI行业发展的融资趋势、监管战和商业战略。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles" id="articles">
+            <h2>最新文章</h2>
+            <div class="article-list">
+                <div class="article-item">
+                    <div>
+                        <span class="category infrastructure">基础设施</span>
+                        <h3><a href="/news/zh/the-hidden-crisis-behind-ai-meteoric-rise.html">AI迅猛崛起背后的隐藏危机</a></h3>
+                        <p>AI数据中心正消耗着前所未有的电力,给电网带来压力,迫使公用事业公司重新思考基础设施规划。</p>
+                        <div class="meta">Rebecca Santos · 2026年1月28日 · 阅读时长9分钟</div>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div>
+                        <span class="category">开发工具</span>
+                        <h3><a href="/news/zh/why-developers-are-ditching-200-subscriptions-for-free-ai-tools.html">为什么开发者放弃200美元订阅转向免费AI工具</a></h3>
+                        <p>随着高级AI编码工具每月收费高达200美元,开源替代方案正在在注重成本的开发者中获得动力。</p>
+                        <div class="meta">James Mitchell · 2026年1月28日 · 阅读时长8分钟</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/news/zh/" class="logo">Tech<span>Insight</span></a>
+                    <p>提供对技术趋势、开发工具和软件未来的深入分析。</p>
+                </div>
+                <div class="footer-links">
+                    <h4>主题</h4>
+                    <a href="#topics">人工智能</a>
+                    <a href="#topics">开发</a>
+                    <a href="#topics">基础设施</a>
+                    <a href="#topics">安全</a>
+                </div>
+                <div class="footer-links">
+                    <h4>公司</h4>
+                    <a href="#footer">关于我们</a>
+                    <a href="#footer">联系</a>
+                    <a href="#footer">广告</a>
+                    <a href="#footer">招聘</a>
+                </div>
+                <div class="footer-links">
+                    <h4>法律</h4>
+                    <a href="#footer">隐私政策</a>
+                    <a href="#footer">服务条款</a>
+                    <a href="#footer">Cookie政策</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechInsight. 版权所有。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
